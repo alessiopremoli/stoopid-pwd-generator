@@ -4,13 +4,14 @@ html {
 
 .container {
     display: grid;
-    place-items: center;
+    place-items: center;;
 }
 
 .form {
-    /* border: 1px solid black; */
+    display: grid;
     place-items: center;
-
+    border: 1px solid salmon;
+    width: 33%;
 }
 
 input {
@@ -22,9 +23,39 @@ input {
     height: 1.5rem;
     margin: 1.5rem 1.5rem;
     font-size: 20px;
+    display:inline-block;
+    border-bottom: 2px solid transparent;
+}
+
+input::placeholder {
+    color: lightgrey
 }
 
 input:focus {
-    transition: 3s fade-in;
-    border-bottom: 2px solid gray
+    animation: line 2s linear forwards;
+    border-bottom: 2px solid gray;
+}
+.buttons {
+    width: 100%;
+    text-align: center;
+}
+
+.buttons * {
+    display:inline-block;
+    width: 40%;
+}
+
+button {
+    appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+button:hover, button:active {
+    background-color: #b8b8b8;
+    transition: 0.3s;
+    cursor: pointer;
 }
