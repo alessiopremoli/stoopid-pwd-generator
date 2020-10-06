@@ -14,22 +14,23 @@
 </head>
 
 <body>
-    <script src="js/scripts.js"></script>
-
     <div class="container">
         <h1>Stoopid Password Generator</h1>
         <h4>Generate a random password to reset at first login</h4>
-        <div class="form">
-            <input type="email" placeholder="email">
-            <input type="text" placeholder="web login">
+        <form id="myForm">
+            <fieldset>
+                <input type="email" placeholder="email" id="email" name="email">
+                <input type="text" placeholder="web login" id="weblogin" name="weblogin">
+            </fieldset>
             <div class="buttons">
                 <button type="submit">Generate password</button>
                 <button type="reset">Reset</button>
             </div>
-        </div>
-
+        </form>
+        <div id="answer" class="answer"></div>
     </div>
-
+    <script src="scripts/generator.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>

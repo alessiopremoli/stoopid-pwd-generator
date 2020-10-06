@@ -7,11 +7,14 @@ html {
     place-items: center;;
 }
 
-.form {
+form {
     display: grid;
     place-items: center;
-    border: 1px solid salmon;
     width: 33%;
+}
+
+fieldset {
+    border: none;
 }
 
 input {
@@ -52,10 +55,15 @@ button {
     border-radius: 15px;
     height: 2rem;
     margin-bottom: 1.5rem;
+    font-size: initial;
 }
 
 button:hover, button:active {
     background-color: #b8b8b8;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.answer {
+    text-align: center;
 }
